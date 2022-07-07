@@ -1,7 +1,5 @@
 package token
 
-import "fmt"
-
 type TokenType string
 type Token struct {
 	Type    TokenType
@@ -35,6 +33,14 @@ const (
 	LET      = "LET"
 )
 
-func PrintHello() {
-	fmt.Println("Hello, Monkey!")
+var keywords = map[string]TokenType{
+	"fn":  FUNCTION,
+	"let": LET,
+}
+
+func LookUpIndent(ident string) TokenType {
+	if tok, ok := keywords[ident]; ok {
+		return tok
+	}
+	return IDENT
 }
