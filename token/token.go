@@ -12,8 +12,9 @@ const (
 	LET      = "LET"
 	FUNCTION = "fn"
 
-	//identifier
+	//identifier, literal
 	IDENT = "IDENT"
+	INT   = "INT"
 
 	//symbols
 	ASSIGN    = "="
@@ -24,4 +25,8 @@ const (
 	RBRACE    = "}"
 	COMMA     = ","
 	SEMICOLON = ";"
+
+	//necessarily needed
+	ILLEGAL = "ILLEGAL"
+	EOF     = "EOF"
 )
