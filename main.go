@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/user"
 
-	"github.com/minju-kim98/monkey/repl"
+	"github.com/minju-kim98/monkey_clone/repl"
 )
 
 func main() {
