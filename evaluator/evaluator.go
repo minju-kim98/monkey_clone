@@ -77,20 +77,6 @@ func evalBlockStatement(block *ast.BlockStatement) object.Object {
 	return result
 }
 
-func evalStatements(stmts []ast.Statement) object.Object {
-	var result object.Object
-
-	for _, statement := range stmts {
-		result = Eval(statement)
-
-		if returnValue, ok := result.(*object.ReturnValue); ok {
-			return returnValue.Value
-		}
-	}
-
-	return result
-}
-
 func evalPrefixExpression(operator string, right object.Object) object.Object {
 	switch operator {
 	case "!":
