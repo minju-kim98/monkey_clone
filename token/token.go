@@ -18,8 +18,9 @@ const (
 	ELSE     = "ELSE"
 
 	//identifier, literal
-	IDENT = "IDENT"
-	INT   = "INT"
+	IDENT  = "IDENT"
+	INT    = "INT"
+	STRING = "STRING"
 
 	//symbols
 	ASSIGN   = "="
