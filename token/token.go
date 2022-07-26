@@ -43,6 +43,7 @@ const (
 
 	COMMA     = ","
 	SEMICOLON = ";"
+	COLON     = ":"
 
 	//necessarily needed
 	ILLEGAL = "ILLEGAL"
